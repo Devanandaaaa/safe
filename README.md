@@ -1,10 +1,12 @@
 **PROJECT DESCRIPTION**
+
 SAFE360+ – Women’s Safety & Maternal Risk Tracker
 Project Type: Web Application (Frontend-only, React-based)
 Target Users: Women, mothers, solo travelers, students
 
 
 **Problem Statement**
+
 Women face multiple, overlapping risks in daily life:
 Public safety risks while commuting or traveling alone.
 Maternal health risks, especially postpartum complications and mental health challenges.
