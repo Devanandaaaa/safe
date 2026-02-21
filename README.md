@@ -14,6 +14,7 @@ Domestic safety risks from coercive behavior, abuse, or unsafe environments.
 Existing solutions are often fragmented — separate apps for safety alerts, maternal health, or domestic violence reporting. Users must juggle multiple platforms, which reduces effectiveness and timeliness of response.
 
 **TECH STACK**
+
 Frontend
 Next.js 13+ – React framework for server-side rendering, routing, and API routes.
 React 18 – Core library used with Next.js.
