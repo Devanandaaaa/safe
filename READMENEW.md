@@ -1,5 +1,5 @@
 **PROJECT DESCRIPTION**
-SafeHer – Women’s Safety & Maternal Risk Tracker
+[SAFE360+ – Women’s Safety & Maternal Risk Tracker]
 Project Type: Web Application (Frontend-only, React-based)
 Target Users: Women, mothers, solo travelers, students
 
