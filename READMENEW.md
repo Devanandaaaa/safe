@@ -43,79 +43,47 @@ useState / useEffect / useCallback – React hooks for local state and side effe
 
 **INSTALLATION COMMANDS**
 
-1️⃣ Clone the repository
+1. Clone the repository
 git clone https://github.com/yourusername/your-repo.git
 cd your-repo
-2️⃣ Backend Setup
+2. Backend Setup
 cd backend
 npm install
-
-Create .env file in backend/ with:
-
+3.Create .env file in backend/ with:
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
-
-Run Backend:
-
+4.Run Backend:
 npm start
+5.Backend will run at: http://localhost:5000
 
-Backend will run at: http://localhost:5000
 **RUN COMMANDS**
 
-3️⃣ Frontend Setup
+1.Frontend Setup
 cd ../frontend
 npm install
-
-Create .env.local file in frontend/ with:
-
+a.Create .env.local file in frontend/ with:
 NEXT_PUBLIC_API_URL=http://localhost:5000
-
-Run Frontend:
+b.Run Frontend:
 npm run dev
-
-Run Backend
+c.Run Backend
 cd backend
 npm start
+d.Backend runs at: http://localhost:5000
 
-Backend runs at: http://localhost:5000
-
-2️⃣ Run Frontend
+2️. Run Frontend
 cd frontend
 npm run dev
+a.Frontend runs at: http://localhost:3000
 
-Frontend runs at: http://localhost:3000
-
-3️⃣ Optional: Run Both Together
-
-Open 2 terminals:
-
-Terminal 1:
-
-cd backend
-npm start
-
-Terminal 2:
-
-cd frontend
-npm run dev
-
-This way both backend and frontend run simultaneously for local development.
-
-4️⃣ Production Deployment Commands (Optional)
-
-Backend (Render / any server)
-
+3.Production Deployment Commands (Optional)
+1.Backend (Render / any server)
 cd backend
 npm install
 npm start
 
-Frontend (Vercel)
-
+2.Frontend (Vercel)
 cd frontend
 vercel --prod
-
-
 Vite / npm – For local development and package management (though Next.js handles bundling).
-
 TypeScript – For type safety and better code maintainability.
