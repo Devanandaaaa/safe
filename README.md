@@ -93,7 +93,7 @@ Google Drive Link:https://drive.google.com/file/d/1s3oclj7ttfyssWXmS_huTIcJH2gvx
 **SYSTEM ARCITECHTURE**
 
 Our web application follows a three-tier architecture comprising Frontend, Backend, and Database, designed for modularity, scalability, and maintainability.
-1. Frontend (Client-Side)
+1.a.Frontend (Client-Side)
 Built with HTML, CSS, and JavaScript, optionally using Next.js or React.
 Responsible for:
 Rendering the user interface
@@ -101,7 +101,7 @@ Capturing user interactions
 Sending requests to the backend via API calls
 Runs on the user’s web browser.
 
-3. Backend (Server-Side)
+b. Backend (Server-Side)
 Built with Node.js and Express.js.
 Responsibilities:
 Handles HTTP requests from the frontend
@@ -110,17 +110,17 @@ Manages authentication and authorization
 Processes and validates data before interacting with the database
 Serves API endpoints (REST or GraphQL)
 
-4. Database
+c. Database
 Stores persistent data such as user credentials, application data, and logs.
 Examples: MongoDB, MySQL, or PostgreSQL.
 Provides CRUD operations to the backend for data management.
 
-5. Optional External Services
+d. Optional External Services
 Third-party APIs for additional functionality (e.g., Google Maps, email services)
 Cloud storage services (e.g., AWS S3) for storing images or files.
 Base URL (Local): http://localhost:3000/api
 Base URL (Production): https://your-frontend.vercel.app/api
-1️. Authentication Routes
+Authentication Routes
 POST /api/auth/register – Register a new user
 Body: { name, email, password }
 Response: { success: true, userId, token }
@@ -131,24 +131,13 @@ POST /api/auth/logout – Logout user
 Body: { token }
 Response: { success: true }
 
-2️. Safety & Emergency Routes
-POST /api/safety/report – Submit a safety report
-Body: { type, location, description, media? }
-Response: { success: true, reportId }
-GET /api/safety/reports – Get all reports for logged-in user
-Headers: Authorization: Bearer <token>
-Response: [ { reportId, type, location, status, createdAt } ]
-POST /api/safety/sos – Trigger an SOS alert
-Body: { latitude, longitude, message }
-Response: { success: true, alertId }
-
-3️.Empowerment / Resources Routes
+2..Empowerment / Resources Routes
 GET /api/resources/list – Fetch all resources
 Response: [ { id, title, category, content, link? } ]
 GET /api/resources/:id – Fetch a specific resource
 Response: { id, title, category, content, link }
 
-4️.Analytics & Dashboard Routes
+3.Analytics & Dashboard Routes
 GET /api/dashboard/stats – Get dashboard statistics
 Headers: Authorization: Bearer <token>
 Response: { totalReports, incidentsByType, safetyScore }
