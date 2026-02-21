@@ -59,36 +59,26 @@ npm start
 5.Backend will run at: http://localhost:5000
 
 **RUN COMMANDS**
-1.Frontend Setup
-cd ../frontend
-npm install
-a.Create .env.local file in frontend/ with:
-NEXT_PUBLIC_API_URL=http://localhost:5000
-b.Run Frontend:
-npm run dev
-c.Run Backend
-cd backend
-npm start
-d.Backend runs at: http://localhost:5000
 
-2️. Run Frontend
+1.Run Frontend Locally
 cd frontend
 npm run dev
-a.Frontend runs at: http://localhost:3000
+Frontend runs at: http://localhost:3000
+No separate backend needed — Firebase handles all API and Auth.
 
-3.Production Deployment Commands (Optional)
-1.Backend (Render / any server)
-cd backend
-npm install
-npm start
+2️.Production Deployment (Vercel)
+cd frontend
+vercel --prod
+Your project will be live on your Vercel domain (e.g., https://safe360plus.vercel.app)
 
-2.Frontend (Vercel)
+3.Frontend (Vercel)
 cd frontend
 vercel --prod
 Vite / npm – For local development and package management (though Next.js handles bundling).
 TypeScript – For type safety and better code maintainability.
 
 **SCREENSHOTS**
+
 ![WhatsApp Image 2026-02-21 at 09 30 03](https://github.com/user-attachments/assets/4c6bc4d0-313f-4086-9732-5975a0f10acd)
 ![WhatsApp Image 2026-02-21 at 09 30 03 (2)](https://github.com/user-attachments/assets/d23f696c-ecb5-4c95-a836-23de5c99c120)
 ![WhatsApp Image 2026-02-21 at 09 30 04](https://github.com/user-attachments/assets/6ec5bb1b-9c39-48ff-9aee-ca23efa72dc8)
@@ -167,10 +157,12 @@ Headers: Authorization: Bearer <token>
 Response: { chartData: { labels: [], datasets: [] } }
 
 **TEAM MEMBERS**
-ALBY GRACE ABY
-DEVANANDA D
+
+1.ALBY GRACE ABY
+2.DEVANANDA D
 
 **LICENSE INFO**
+
 This project was created by **Alby Grace Aby** and **Devananda D** for hackathon purposes.  
 We welcome contributions!!!  
 If anyone wants to collaborate or improve the project,feel free to fork the repository,submit pull requests,or suggest enhancements.  
