@@ -235,8 +235,8 @@ export default function FinancialPage() {
                                                 <td className="py-2 text-right text-purple-600">₹{h.savings?.toLocaleString()}</td>
                                                 <td className="py-2 text-right">
                                                     <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${h.financialDependency < 25 ? "bg-emerald-100 text-emerald-700" :
-                                                            h.financialDependency < 50 ? "bg-amber-100 text-amber-700" :
-                                                                "bg-rose-100 text-rose-700"
+                                                        h.financialDependency < 50 ? "bg-amber-100 text-amber-700" :
+                                                            "bg-rose-100 text-rose-700"
                                                         }`}>{h.financialDependency}%</span>
                                                 </td>
                                             </tr>

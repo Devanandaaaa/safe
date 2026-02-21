@@ -555,7 +555,7 @@ function EvidenceVault({ user }: { user: { uid: string } | null }) {
                     { icon: Lock, label: "End-to-end encrypted", desc: "Firebase Security Rules protect your data", color: "text-emerald-500" },
                     { icon: Users, label: "Private to you only", desc: "No one else can access your evidence", color: "text-indigo-500" },
                     { icon: Camera, label: "Metadata preserved", desc: "Timestamp auto-recorded for legal use", color: "text-fuchsia-500" },
-                    { icon: Download, label: "Exportable", desc: "Download for lawyer or police submission", color: "text-amber-500" },
+
                 ].map((f, i) => (
                     <div key={i} className="flex items-center gap-3 p-3 bg-slate-50 rounded-xl mb-2">
                         <f.icon className={`w-5 h-5 ${f.color} flex-shrink-0`} />
