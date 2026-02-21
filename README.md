@@ -97,10 +97,11 @@ TypeScript – For type safety and better code maintainability.
 ![WhatsApp Image 2026-02-21 at 09 30 04 (3)](https://github.com/user-attachments/assets/e5544243-1556-4728-afbf-2d549ac21014)
 
 **VIDEO**
+
 Google Drive Link:https://drive.google.com/file/d/1s3oclj7ttfyssWXmS_huTIcJH2gvxk9z/view
 
 **SYSTEM ARCITECHTURE**
-System Architecture
+
 Our web application follows a three-tier architecture comprising Frontend, Backend, and Database, designed for modularity, scalability, and maintainability.
 1. Frontend (Client-Side)
 Built with HTML, CSS, and JavaScript, optionally using Next.js or React.
@@ -127,11 +128,8 @@ Provides CRUD operations to the backend for data management.
 5. Optional External Services
 Third-party APIs for additional functionality (e.g., Google Maps, email services)
 Cloud storage services (e.g., AWS S3) for storing images or files.
-Base URL (Local):
-
-http://localhost:3000/api
-Base URL (Production):
-https://your-frontend.vercel.app/api
+Base URL (Local): http://localhost:3000/api
+Base URL (Production): https://your-frontend.vercel.app/api
 1️. Authentication Routes
 POST /api/auth/register – Register a new user
 Body: { name, email, password }
