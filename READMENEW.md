@@ -4,7 +4,7 @@ Project Type: Web Application (Frontend-only, React-based)
 Target Users: Women, mothers, solo travelers, students
 
 
-*Problem Statement*
+**Problem Statement**
 Women face multiple, overlapping risks in daily life:
 Public safety risks while commuting or traveling alone.
 Maternal health risks, especially postpartum complications and mental health challenges.
@@ -25,7 +25,6 @@ Node.js runtime – Provided by Next.js server.
 
 Database / Storage
 Firebase Firestore – Real-time NoSQL database for storing entries like financial or empowerment data.
-
 Firebase Auth – Authentication system for users.
 State Management
 
@@ -128,70 +127,52 @@ Cloud storage services (e.g., AWS S3) for storing images or files.
 Base URL (Local):
 
 http://localhost:3000/api
-
 Base URL (Production):
-
 https://your-frontend.vercel.app/api
-1️⃣ Authentication Routes
-
+1️. Authentication Routes
 POST /api/auth/register – Register a new user
 Body: { name, email, password }
 Response: { success: true, userId, token }
-
 POST /api/auth/login – Login user
 Body: { email, password }
 Response: { success: true, userId, token }
-
 POST /api/auth/logout – Logout user
 Body: { token }
 Response: { success: true }
 
-2️⃣ Safety & Emergency Routes
-
+2️. Safety & Emergency Routes
 POST /api/safety/report – Submit a safety report
 Body: { type, location, description, media? }
 Response: { success: true, reportId }
-
 GET /api/safety/reports – Get all reports for logged-in user
 Headers: Authorization: Bearer <token>
 Response: [ { reportId, type, location, status, createdAt } ]
-
 POST /api/safety/sos – Trigger an SOS alert
 Body: { latitude, longitude, message }
 Response: { success: true, alertId }
 
-3️⃣ Empowerment / Resources Routes
-
+3️.Empowerment / Resources Routes
 GET /api/resources/list – Fetch all resources
 Response: [ { id, title, category, content, link? } ]
-
 GET /api/resources/:id – Fetch a specific resource
 Response: { id, title, category, content, link }
 
-4️⃣ Analytics & Dashboard Routes
-
+4️.Analytics & Dashboard Routes
 GET /api/dashboard/stats – Get dashboard statistics
 Headers: Authorization: Bearer <token>
 Response: { totalReports, incidentsByType, safetyScore }
-
 GET /api/dashboard/charts – Get chart data for visualization
 Headers: Authorization: Bearer <token>
 Response: { chartData: { labels: [], datasets: [] } }
-
-
-
-
 
 **TEAM MEMBERS**
 ALBY GRACE ABY
 DEVANANDA D
 
 **LICENSE INFO**
-
 This project was created by **Alby Grace Aby** and **Devananda D** for hackathon purposes.  
 We welcome contributions!!!  
 If anyone wants to collaborate or improve the project,feel free to fork the repository,submit pull requests,or suggest enhancements.  
-
 All rights are reserved by the creators; this project is **open-source for collaboration only**.
 
 
