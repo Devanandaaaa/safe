@@ -97,7 +97,6 @@ TypeScript – For type safety and better code maintainability.
 Google Drive Link:https://drive.google.com/file/d/1s3oclj7ttfyssWXmS_huTIcJH2gvxk9z/view
 
 **SYSTEM ARCITECHTURE**
-System Architecture
 Our web application follows a three-tier architecture comprising Frontend, Backend, and Database, designed for modularity, scalability, and maintainability.
 1. Frontend (Client-Side)
 Built with HTML, CSS, and JavaScript, optionally using Next.js or React.
@@ -166,8 +165,8 @@ Headers: Authorization: Bearer <token>
 Response: { chartData: { labels: [], datasets: [] } }
 
 **TEAM MEMBERS**
-ALBY GRACE ABY
-DEVANANDA D
+1.ALBY GRACE ABY
+2.DEVANANDA D
 
 **LICENSE INFO**
 This project was created by **Alby Grace Aby** and **Devananda D** for hackathon purposes.  
