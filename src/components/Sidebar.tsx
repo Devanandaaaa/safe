@@ -9,7 +9,7 @@ const NAV_ITEMS = [
     { href: "/safety", label: "Safety Intelligence", icon: ShieldAlert, color: "text-indigo-400" },
     { href: "/maternal", label: "Maternal Risk Radar", icon: Heart, color: "text-fuchsia-400" },
     { href: "/domestic", label: "Domestic Risk Detector", icon: AlertTriangle, color: "text-rose-400" },
-    { href: "/financial", label: "Financial Autonomy", icon: TrendingUp, color: "text-emerald-400" },
+    
 ];
 
 export default function Sidebar() {

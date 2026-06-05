@@ -13,11 +13,14 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
     }
 
     return (
-        <div className="flex h-screen overflow-hidden">
+        <div className="flex h-screen overflow-hidden bg-[#050505]">
             <Sidebar />
-            <main className="flex-1 flex flex-col max-h-screen overflow-hidden bg-slate-50">
-                <div className="flex-1 overflow-auto p-8">
-                    <div className="max-w-7xl mx-auto">
+            {/* Changed bg-slate-50 to bg-[#050505] */}
+            <main className="flex-1 flex flex-col max-h-screen overflow-hidden bg-[#050505]">
+                {/* Removed p-8 padding so the page layout flows edge-to-edge */}
+                <div className="flex-1 overflow-auto p-0 m-0">
+                    {/* Removed max-w-7xl mx-auto to allow true full-width display */}
+                    <div className="w-full h-full">
                         {children}
                     </div>
                 </div>
